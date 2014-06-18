@@ -22,7 +22,7 @@ public class AnnotationProcessor {
 
             for(Method method : allMethods){
                 if(annotation == null || method.isAnnotationPresent(annotation)){
-                    /*final Annotation foundAnnotation = */method.getAnnotation(annotation);
+                    method.getAnnotation(annotation);
                     methods.add(method);
                 }
             }
