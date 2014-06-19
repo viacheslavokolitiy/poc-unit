@@ -14,6 +14,10 @@ public class TestRunner implements TestRunnable {
         mAnnotationProcessor = new AnnotationProcessor();
     }
 
+    /**
+     * Not a javadoc
+     * @see ua.dev.poc.TestRunnable#run(Class, Class) for details
+     */
     @Override
     public synchronized void run(Class<?> klazz, Class<? extends Annotation> targetAnnotation) {
         try {

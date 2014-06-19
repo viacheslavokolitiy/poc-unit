@@ -15,6 +15,10 @@ public class TestTask {
         return mClassQueue;
     }
 
+    /**
+     * Add test case to test queue
+     * @param testTask test case class
+     */
     public void addTest(Class<?> testTask){
         mClassQueue.add(testTask);
     }

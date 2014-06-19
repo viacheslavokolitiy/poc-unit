@@ -1,10 +1,5 @@
 package ua.dev.poc.reporting;
 
-import java.io.IOException;
-
-/**
- * Created by 1 on 18.06.2014.
- */
 public class ConsoleReport implements ReportingStrategy {
     private boolean isSuccess;
     private boolean isFailure;

@@ -14,6 +14,12 @@ public class AnnotationProcessor {
         methods = new ArrayList<Method>();
     }
 
+    /**
+     * Get all annotated methods from test case
+     * @param type test case class
+     * @param annotation annotation
+     * @return annotated methods list
+     */
     public List<Method> getAllAnnotatedMethods(final Class<?> type, final Class<? extends Annotation> annotation) {
         Class<?> klass = type;
         do {

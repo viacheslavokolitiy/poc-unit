@@ -4,7 +4,15 @@ import java.io.IOException;
 
 public interface TestStatus {
 
-    void fail(String message) throws IOException;
+    /**
+     * Sends a test status message if test failed
+     * @param message report message
+     */
+    void fail(String message);
 
-    void success(String message) throws IOException;
+    /**
+     * Sends a test status message if test passes
+     * @param message report message
+     */
+    void success(String message);
 }
